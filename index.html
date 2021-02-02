@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing-Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+    <h1>Number Guessing game 1-100</h1>
+    <article>
+        <h2>How many rounds you think you can guess the number?</h2>
+        <div id="container">
+            <form action="">
+                <div>
+                <input type="radio" name="rounds" onchange="getRound()" id="four" checked>
+                <label for="four">4</label>
+                <input type="radio" name="rounds" onchange="getRound()" id="five">
+                <label for="five">5</label>
+                </div>
+                <div> 
+                    <input type="radio" name="rounds" onchange="getRound()" id="six">
+                    <label for="six">6</label>
+                    <input type="radio" name="rounds" onchange="getRound()" id="custom">
+                    <label for="custom">Custom</label>
+                    <input type="number" name="" id="custom-input" onchange="getRound()">
+                </div>
+            </form>
+        </div>
+        <div id="round-container">
+            <span id="round">0</span>/<span id="round-total">5</span>
+        </div>
+    </article>
+    <article>
+        <div><input type="number" name="" id="number-user"></div>
+        <div><input type="button" value="Guess" onclick="main()" id="btn"> </div>
+    </article>
+    <div id="result"></div>
+</main>
+    <script src="main.js"></script>
+</body>
+
+</html>
